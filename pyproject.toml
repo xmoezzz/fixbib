@@ -16,6 +16,40 @@ dependencies = [
   "rich>=13.7",
 ]
 
+keywords = [
+  "bibtex",
+  "bibliography",
+  "citation",
+  "doi",
+  "latex",
+  "llm",
+  "hallucination",
+  "academic-writing",
+  "metadata",
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Text Processing",
+  "Topic :: Text Processing :: Markup :: LaTeX",
+]
+
+[project.urls]
+Homepage = "https://github.com/xmoezzz/fixbib"
+Repository = "https://github.com/xmoezzz/fixbib"
+Issues = "https://github.com/xmoezzz/fixbib/issues"
+
+
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
