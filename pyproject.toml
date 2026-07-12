@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixbib"
+version = "0.4.9"
+description = "Repair and verify BibTeX metadata while preserving citation keys."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "bibtexparser>=2.0.0b9,<3",
+  "httpx>=0.25",
+  "beautifulsoup4>=4.12",
+  "rapidfuzz>=3.0",
+  "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+fixbib = "fixbib.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fixbib*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

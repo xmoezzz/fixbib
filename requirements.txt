@@ -1,0 +1,6 @@
+bibtexparser>=2.0.0b9,<3
+httpx>=0.25
+beautifulsoup4>=4.12
+rapidfuzz>=3.0
+rich>=13.7
+pytest>=8.0
